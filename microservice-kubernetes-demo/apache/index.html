@@ -3,46 +3,78 @@
 <head>
 <title>Order Processing</title>
 
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-beta3/css/bootstrap.min.css" />
 
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-beta3/js/bootstrap.min.js"></script>
 
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<!-- Add the Font Awesome for icons -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
 
+<style>
+    body {
+        background-color: #f2f2f2;
+    }
+
+    .btn-custom {
+        background-color: #007BFF;
+        color: #ffffff;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .btn-custom:hover {
+        background-color: #0056b3;
+        color: #ffffff;
+    }
+
+    .icon-section {
+        font-size: 3em;
+        color: #007BFF;
+    }
+
+    .section-header {
+        margin-bottom: 20px;
+    }
+</style>
 </head>
 <body>
-	<h1>Order Processing</h1>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4">
-				<a href="/customer/list.html">Customer</a>
-			</div>
-			<div class="col-md-4">List / add / remove customers</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4">
-				<a href="/catalog/list.html">Catalog</a>
-			</div>
-			<div class="col-md-4">List / add / remove items</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4">
-				<a href="/catalog/searchForm.html">Catalog</a>
-			</div>
-			<div class="col-md-4">Search Items</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4">
-				<a href="/order/">Order</a>
-			</div>
-			<div class="col-md-4">Create an order</div>
-		</div>
-		<div class="row">
-		</div>
-	</div>
-
+    <h1 class="text-center my-4">Order Processing</h1>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="icon-section">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h2 class="section-header">Customer</h2>
+                <p>List / add / remove customers</p>
+                <a href="/customer/list.html" class="btn btn-custom">Go to Customer</a>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="icon-section">
+                    <i class="fas fa-list-alt"></i>
+                </div>
+                <h2 class="section-header">Catalog</h2>
+                <p>List / add / remove items</p>
+                <a href="/catalog/list.html" class="btn btn-custom">Go to Catalog</a>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="icon-section">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h2 class="section-header">Catalog Search</h2>
+                <p>Search Items</p>
+                <a href="/catalog/searchForm.html" class="btn btn-custom">Search Catalog</a>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="icon-section">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <h2 class="section-header">Order</h2>
+                <p>Create an order</p>
+                <a href="/order/" class="btn btn-custom">Create Order</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+
